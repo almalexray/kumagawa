@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  typed: MyString
+  view: MyString
+  start_date: 2013-09-19 18:26:47
+  end_date: 2013-09-19 18:26:47
+  period: MyString
+  hours: 1
+  based: MyString
+  outlet_control: MyString
+  certificate: MyString
+  cost: 1
+
+two:
+  name: MyString
+  typed: MyString
+  view: MyString
+  start_date: 2013-09-19 18:26:47
+  end_date: 2013-09-19 18:26:47
+  period: MyString
+  hours: 1
+  based: MyString
+  outlet_control: MyString
+  certificate: MyString
+  cost: 1

@@ -1,0 +1,27 @@
+<h1>Listing vieweds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @vieweds.each do |viewed| %>
+      <tr>
+        <td><%= viewed.name %></td>
+        <td><%= link_to 'Show', viewed %></td>
+        <td><%= link_to 'Edit', edit_viewed_path(viewed) %></td>
+        <td><%= link_to 'Destroy', viewed, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Viewed', new_viewed_path %>

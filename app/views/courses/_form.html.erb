@@ -1,0 +1,61 @@
+<%= form_for(@course) do |f| %>
+  <% if @course.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@course.errors.count, "error") %> prohibited this course from being saved:</h2>
+
+      <ul>
+      <% @course.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :typed %><br>
+    <%= f.text_field :typed %>
+  </div>
+  <div class="field">
+    <%= f.label :view %><br>
+    <%= f.text_field :view %>
+  </div>
+  <div class="field">
+    <%= f.label :start_date %><br>
+    <%= f.datetime_select :start_date %>
+  </div>
+  <div class="field">
+    <%= f.label :end_date %><br>
+    <%= f.datetime_select :end_date %>
+  </div>
+  <div class="field">
+    <%= f.label :period %><br>
+    <%= f.text_field :period %>
+  </div>
+  <div class="field">
+    <%= f.label :hours %><br>
+    <%= f.number_field :hours %>
+  </div>
+  <div class="field">
+    <%= f.label :based %><br>
+    <%= f.text_field :based %>
+  </div>
+  <div class="field">
+    <%= f.label :outlet_control %><br>
+    <%= f.text_field :outlet_control %>
+  </div>
+  <div class="field">
+    <%= f.label :certificate %><br>
+    <%= f.text_field :certificate %>
+  </div>
+  <div class="field">
+    <%= f.label :cost %><br>
+    <%= f.number_field :cost %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
