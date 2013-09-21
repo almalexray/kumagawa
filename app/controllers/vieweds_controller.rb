@@ -1,28 +1,20 @@
 class ViewedsController < ApplicationController
   before_action :set_viewed, only: [:show, :edit, :update, :destroy]
 
-  # GET /vieweds
-  # GET /vieweds.json
   def index
     @vieweds = Viewed.all
   end
 
-  # GET /vieweds/1
-  # GET /vieweds/1.json
   def show
   end
 
-  # GET /vieweds/new
   def new
     @viewed = Viewed.new
   end
 
-  # GET /vieweds/1/edit
   def edit
   end
 
-  # POST /vieweds
-  # POST /vieweds.json
   def create
     @viewed = Viewed.new(viewed_params)
 
@@ -37,8 +29,6 @@ class ViewedsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /vieweds/1
-  # PATCH/PUT /vieweds/1.json
   def update
     respond_to do |format|
       if @viewed.update(viewed_params)
@@ -51,8 +41,6 @@ class ViewedsController < ApplicationController
     end
   end
 
-  # DELETE /vieweds/1
-  # DELETE /vieweds/1.json
   def destroy
     @viewed.destroy
     respond_to do |format|
@@ -62,12 +50,10 @@ class ViewedsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_viewed
       @viewed = Viewed.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
     def viewed_params
       params.require(:viewed).permit(:name)
     end
