@@ -14,7 +14,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'thin'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
-gem 'the_role'
+gem 'the_role',  '~> 2.1.1'
 gem 'devise'
 gem 'bootstrap-sass'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes

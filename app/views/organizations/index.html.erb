@@ -26,9 +26,9 @@
         <td><%= organization.serial %></td>
         <td><%= organization.number %></td>
         <td><%= organization.certificate %></td>
-        <td><%= link_to 'Show', organization %></td>
-        <td><%= link_to 'Edit', edit_organization_path(organization) %></td>
-        <td><%= link_to 'Destroy', organization, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Показать', organization %></td>
+        <td><%= link_to 'Редактировать', edit_organization_path(organization) %></td>
+        <td><%= link_to 'Удалить', organization, method: :delete, data: { confirm: 'Вы уверены?' } %></td>
       </tr>
     <% end %>
   </tbody>

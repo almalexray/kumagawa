@@ -1,19 +1,19 @@
-<h1>Listing courses</h1>
+<h1>Список курсов</h1>
 
-<table>
+<table class="table table-bordered">
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Typed</th>
-      <th>View</th>
-      <th>Start date</th>
-      <th>End date</th>
-      <th>Period</th>
-      <th>Hours</th>
-      <th>Based</th>
-      <th>Outlet control</th>
-      <th>Certificate</th>
-      <th>Cost</th>
+      <th>Название</th>
+      <th>Тип проведения</th>
+      <th>Вид проведения</th>
+      <th>Дата начала</th>
+      <th>Дата окончания</th>
+      <th>Срок обучения</th>
+      <th>Количество часов</th>
+      <th>На базе</th>
+      <th>Вид выпускного контроля</th>
+      <th>Вид выдаваемого документа</th>
+      <th>Цена обучения</th>
       <th></th>
       <th></th>
       <th></th>
@@ -34,9 +34,9 @@
         <td><%= course.outlet_control %></td>
         <td><%= course.certificate %></td>
         <td><%= course.cost %></td>
-        <td><%= link_to 'Show', course %></td>
-        <td><%= link_to 'Edit', edit_course_path(course) %></td>
-        <td><%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Показать', course %></td>
+        <td><%= link_to 'Редактировать', edit_course_path(course) %></td>
+        <td><%= link_to 'Удалить', course, method: :delete, data: { confirm: 'Вы уверены?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -44,4 +44,4 @@
 
 <br>
 
-<%= link_to 'New Course', new_course_path %>
+<%= link_to 'Новый курс', new_course_path %>

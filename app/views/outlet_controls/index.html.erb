@@ -1,9 +1,9 @@
-<h1>Listing outlet_controls</h1>
+<h1>Список видов выпусконого контроля</h1>
 
-<table>
+<table class="table table-bordered">
   <thead>
     <tr>
-      <th>Name</th>
+      <th>Название</th>
       <th></th>
       <th></th>
       <th></th>
@@ -14,9 +14,9 @@
     <% @outlet_controls.each do |outlet_control| %>
       <tr>
         <td><%= outlet_control.name %></td>
-        <td><%= link_to 'Show', outlet_control %></td>
-        <td><%= link_to 'Edit', edit_outlet_control_path(outlet_control) %></td>
-        <td><%= link_to 'Destroy', outlet_control, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Показать', outlet_control %></td>
+        <td><%= link_to 'Редактировать', edit_outlet_control_path(outlet_control) %></td>
+        <td><%= link_to 'Удалить', outlet_control, method: :delete, data: { confirm: 'Вы уверены?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -24,4 +24,4 @@
 
 <br>
 
-<%= link_to 'New Outlet control', new_outlet_control_path %>
+<%= link_to 'Вид выпусконого контроля', new_outlet_control_path %>

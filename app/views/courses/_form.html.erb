@@ -12,50 +12,51 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
+    <%= f.label :name, 'Название' %><br>
     <%= f.text_field :name %>
   </div>
+
   <div class="field">
-    <%= f.label :typed %><br>
+    <%= f.label :typed, 'Тип проведения' %><br>
     <%= f.text_field :typed %>
   </div>
   <div class="field">
-    <%= f.label :view %><br>
-    <%= f.text_field :view %>
+    <%= f.label :view, 'Вид проведение' %><br>
+    <%= f.select(:view, Viewed.all.collect {|model| [model.name, model.id]}) %>
   </div>
   <div class="field">
-    <%= f.label :start_date %><br>
+    <%= f.label :start_date, 'Дата начала' %><br>
     <%= f.datetime_select :start_date %>
   </div>
   <div class="field">
-    <%= f.label :end_date %><br>
+    <%= f.label :end_date, 'Дата окончания' %><br>
     <%= f.datetime_select :end_date %>
   </div>
   <div class="field">
-    <%= f.label :period %><br>
+    <%= f.label :period, 'Срок обучения' %><br>
     <%= f.text_field :period %>
   </div>
   <div class="field">
-    <%= f.label :hours %><br>
+    <%= f.label :hours, 'Количество часов' %><br>
     <%= f.number_field :hours %>
   </div>
   <div class="field">
-    <%= f.label :based %><br>
+    <%= f.label :based, 'На базе какого образования' %><br>
     <%= f.text_field :based %>
   </div>
   <div class="field">
-    <%= f.label :outlet_control %><br>
-    <%= f.text_field :outlet_control %>
+    <%= f.label :outlet_control, 'Вид выпускного контроля' %><br>
+    <%= f.select(:outlet_control, OutletControl.all.collect {|model| [model.name, model.id]}) %>
   </div>
   <div class="field">
-    <%= f.label :certificate %><br>
-    <%= f.text_field :certificate %>
+    <%= f.label :certificate, 'Вид выдаваемого документа' %><br>
+    <%= f.select(:certificate, Certificate.all.collect {|model| [model.name, model.id]}) %>
   </div>
   <div class="field">
-    <%= f.label :cost %><br>
+    <%= f.label :cost, 'Стоимость обучения' %><br>
     <%= f.number_field :cost %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Подтвердить' %>
   </div>
 <% end %>

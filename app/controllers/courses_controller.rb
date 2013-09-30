@@ -1,11 +1,14 @@
 class CoursesController < ApplicationController
-  before_action :set_course, only: [:show, :edit, :update, :destroy]
-
+  before_filter :login_required, :except => [:index, :show]
+  before_filter :role_required,  :except => [:index, :show]
+  before_action :set_course, only: [:edit, :update, :destroy]
+  before_filter :owner_required, :only   => [:edit, :update, :destroy]
   def index
     @courses = Course.all
   end
 
   def show
+    @course = Course.find(params[:id])
   end
 
   def new
@@ -51,6 +54,7 @@ class CoursesController < ApplicationController
   private
     def set_course
       @course = Course.find(params[:id])
+      @ownership_checking_object = @course
     end
 
     def course_params

@@ -1,0 +1,11 @@
+<h6>Текущий пользователь</h6>
+
+<p>
+  <% if user_signed_in? %>
+  <p>
+    <p><b>Ваш email: </b><%= current_user.email %></p>
+    <p><b>Вы: </b><%= current_user.role.title %></p>
+    <p></p>
+  </p>
+    <% end %>
+</p>

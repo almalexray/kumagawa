@@ -1,9 +1,9 @@
-<h1>Listing vieweds</h1>
+<h1>Список</h1>
 
-<table>
+<table class="table table-bordered">
   <thead>
     <tr>
-      <th>Name</th>
+      <th>Название</th>
       <th></th>
       <th></th>
       <th></th>
@@ -14,9 +14,9 @@
     <% @vieweds.each do |viewed| %>
       <tr>
         <td><%= viewed.name %></td>
-        <td><%= link_to 'Show', viewed %></td>
-        <td><%= link_to 'Edit', edit_viewed_path(viewed) %></td>
-        <td><%= link_to 'Destroy', viewed, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Показать', viewed %></td>
+        <td><%= link_to 'Редактировать', edit_viewed_path(viewed) %></td>
+        <td><%= link_to 'Удалить', viewed, method: :delete, data: { confirm: 'Вы уверены?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -24,4 +24,4 @@
 
 <br>
 
-<%= link_to 'New Viewed', new_viewed_path %>
+<%= link_to 'Новый вид проведения', new_viewed_path %>

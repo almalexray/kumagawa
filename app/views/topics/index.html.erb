@@ -1,12 +1,12 @@
-<h1>Listing topics</h1>
+<h1>Список тем</h1>
 
-<table>
+<table class="table table-bordered">
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Hours</th>
-      <th>Course</th>
+      <th>Название</th>
+      <th>Описание</th>
+      <th>Количество часов</th>
+      <th>Курс</th>
       <th></th>
       <th></th>
       <th></th>
@@ -20,9 +20,9 @@
         <td><%= topic.description %></td>
         <td><%= topic.hours %></td>
         <td><%= topic.course %></td>
-        <td><%= link_to 'Show', topic %></td>
-        <td><%= link_to 'Edit', edit_topic_path(topic) %></td>
-        <td><%= link_to 'Destroy', topic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Показать', topic %></td>
+        <td><%= link_to 'Редактировать', edit_topic_path(topic) %></td>
+        <td><%= link_to 'Удалить', topic, method: :delete, data: { confirm: 'Вы уверены?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Topic', new_topic_path %>
+<%= link_to 'Новая тема', new_topic_path %>

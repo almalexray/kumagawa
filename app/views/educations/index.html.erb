@@ -1,9 +1,9 @@
-<h1>Listing educations</h1>
+<h1>Список </h1>
 
-<table>
+<table class="table table-bordered">
   <thead>
     <tr>
-      <th>Name</th>
+      <th>Название</th>
       <th></th>
       <th></th>
       <th></th>
@@ -14,9 +14,9 @@
     <% @educations.each do |education| %>
       <tr>
         <td><%= education.name %></td>
-        <td><%= link_to 'Show', education %></td>
-        <td><%= link_to 'Edit', edit_education_path(education) %></td>
-        <td><%= link_to 'Destroy', education, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Показать', education %></td>
+        <td><%= link_to 'Редактировать', edit_education_path(education) %></td>
+        <td><%= link_to 'Удалить', education, method: :delete, data: { confirm: 'Вы уверены?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -24,4 +24,4 @@
 
 <br>
 
-<%= link_to 'New Education', new_education_path %>
+<%= link_to 'Новое образование', new_education_path %>

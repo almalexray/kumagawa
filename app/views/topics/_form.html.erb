@@ -12,22 +12,22 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
+    <%= f.label :name, 'Название' %><br>
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :description %><br>
+    <%= f.label :description, 'Описание' %><br>
     <%= f.text_field :description %>
   </div>
   <div class="field">
-    <%= f.label :hours %><br>
+    <%= f.label :hours, 'Количество часов' %><br>
     <%= f.number_field :hours %>
   </div>
   <div class="field">
-    <%= f.label :course %><br>
+    <%= f.label :course, 'Курс' %><br>
     <%= f.text_field :course %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Подтвердить' %>
   </div>
 <% end %>

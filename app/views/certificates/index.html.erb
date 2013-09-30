@@ -1,6 +1,6 @@
 <h1>Listing certificates</h1>
 
-<table>
+<table class="table table-bordered">
   <thead>
     <tr>
       <th>Name</th>
@@ -14,9 +14,9 @@
     <% @certificates.each do |certificate| %>
       <tr>
         <td><%= certificate.name %></td>
-        <td><%= link_to 'Show', certificate %></td>
-        <td><%= link_to 'Edit', edit_certificate_path(certificate) %></td>
-        <td><%= link_to 'Destroy', certificate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Показать', certificate %></td>
+        <td><%= link_to 'Редактировать', edit_certificate_path(certificate) %></td>
+        <td><%= link_to 'Удалить', certificate, method: :delete, data: { confirm: 'Вы уверены?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -24,4 +24,4 @@
 
 <br>
 
-<%= link_to 'New Certificate', new_certificate_path %>
+<%= link_to 'Новый сертификат', new_certificate_path %>

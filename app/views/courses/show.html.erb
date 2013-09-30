@@ -1,59 +1,68 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>Название:</strong>
   <%= @course.name %>
 </p>
 
 <p>
-  <strong>Typed:</strong>
+  <strong>Тип проведения:</strong>
   <%= @course.typed %>
 </p>
 
 <p>
-  <strong>View:</strong>
+  <strong>Вид проведения:</strong>
   <%= @course.view %>
 </p>
 
 <p>
-  <strong>Start date:</strong>
+  <strong>Дата начала:</strong>
   <%= @course.start_date %>
 </p>
 
 <p>
-  <strong>End date:</strong>
+  <strong>Дата окончания:</strong>
   <%= @course.end_date %>
 </p>
 
 <p>
-  <strong>Period:</strong>
+  <strong>Период:</strong>
   <%= @course.period %>
 </p>
 
 <p>
-  <strong>Hours:</strong>
+  <strong>Количество часов:</strong>
   <%= @course.hours %>
 </p>
 
 <p>
-  <strong>Based:</strong>
+  <strong>На базе:</strong>
   <%= @course.based %>
 </p>
 
 <p>
-  <strong>Outlet control:</strong>
+  <strong>Вид выпускного экзамена:</strong>
   <%= @course.outlet_control %>
 </p>
 
 <p>
-  <strong>Certificate:</strong>
+  <strong>Вид выдаваемого документа:</strong>
   <%= @course.certificate %>
 </p>
 
 <p>
-  <strong>Cost:</strong>
+  <strong>Цена:</strong>
   <%= @course.cost %>
 </p>
+<%= form_for(@course) do |f| %>
+<div class="field">
+<%= check_box_tag "user[course_ids][]", @course.id %>
+<br>
+<div class="actions">
+  <%= f.submit 'Подтвердить', class: "btn btn-large btn-primary" %>
+</div>
+<% end %>
 
-<%= link_to 'Edit', edit_course_path(@course) %> |
-<%= link_to 'Back', courses_path %>
+</div>
+<%= link_to 'Редактировать', edit_course_path(@course) %> |
+<%= link_to 'Назад', courses_path %>

@@ -1,5 +1,5 @@
 Kumagawa::Application.routes.draw do
-  root 'organizations#show'
+  root 'courses#index'
   resources :organizations
   resources :certificates
   resources :outlet_controls
@@ -8,4 +8,5 @@ Kumagawa::Application.routes.draw do
   resources :educations
   resources :courses
   devise_for :users
+  resources :users
 end
