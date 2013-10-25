@@ -1,4 +1,6 @@
 class EducationsController < ApplicationController
+  before_filter :login_required
+  before_filter :role_required
   before_action :set_education, only: [:show, :edit, :update, :destroy]
 
   def index
@@ -50,11 +52,11 @@ class EducationsController < ApplicationController
   end
 
   private
-    def set_education
-      @education = Education.find(params[:id])
-    end
+  def set_education
+    @education = Education.find(params[:id])
+  end
 
-    def education_params
-      params.require(:education).permit(:name)
-    end
+  def education_params
+    params.require(:education).permit(:name)
+  end
 end

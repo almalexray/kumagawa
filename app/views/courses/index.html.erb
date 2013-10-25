@@ -1,47 +1,37 @@
 <h1>Список курсов</h1>
 
-<table class="table table-bordered">
+<table class="table table-bordered table-hover">
   <thead>
-    <tr>
-      <th>Название</th>
-      <th>Тип проведения</th>
-      <th>Вид проведения</th>
-      <th>Дата начала</th>
-      <th>Дата окончания</th>
-      <th>Срок обучения</th>
-      <th>Количество часов</th>
-      <th>На базе</th>
-      <th>Вид выпускного контроля</th>
-      <th>Вид выдаваемого документа</th>
-      <th>Цена обучения</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
+  <tr>
+    <th>Название</th>
+    <th>Тип проведения</th>
+    <th>Вид проведения</th>
+    <th>Срок обучения</th>
+    <th>Количество часов</th>
+    <th>На базе</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
   </thead>
 
   <tbody>
-    <% @courses.each do |course| %>
+  <% @courses.each do |course| %>
       <tr>
         <td><%= course.name %></td>
         <td><%= course.typed %></td>
         <td><%= course.view %></td>
-        <td><%= course.start_date %></td>
-        <td><%= course.end_date %></td>
         <td><%= course.period %></td>
         <td><%= course.hours %></td>
         <td><%= course.based %></td>
-        <td><%= course.outlet_control %></td>
-        <td><%= course.certificate %></td>
-        <td><%= course.cost %></td>
-        <td><%= link_to 'Показать', course %></td>
-        <td><%= link_to 'Редактировать', edit_course_path(course) %></td>
-        <td><%= link_to 'Удалить', course, method: :delete, data: { confirm: 'Вы уверены?' } %></td>
+        <td><%= link_to '', course, class: "icon-search" %></td>
+        <td><%= link_to '', edit_course_path(course), class: "icon-pencil" %></td>
+        <td><%= link_to '', course, method: :delete, data: {confirm: 'Вы действительно хотите удалить?'}, class: "icon-remove" %></td>
       </tr>
-    <% end %>
+  <% end %>
   </tbody>
 </table>
 
 <br>
-
+<%= render 'search_form' %>
 <%= link_to 'Новый курс', new_course_path %>

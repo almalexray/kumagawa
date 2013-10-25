@@ -1,4 +1,6 @@
 class TopicsController < ApplicationController
+  before_filter :login_required, except: [:index, :show]
+  before_filter :role_required, except: [:index, :show]
   before_action :set_topic, only: [:show, :edit, :update, :destroy]
 
   def index
@@ -50,11 +52,11 @@ class TopicsController < ApplicationController
   end
 
   private
-    def set_topic
-      @topic = Topic.find(params[:id])
-    end
+  def set_topic
+    @topic = Topic.find(params[:id])
+  end
 
-    def topic_params
-      params.require(:topic).permit(:name, :description, :hours, :course_id)
-    end
+  def topic_params
+    params.require(:topic).permit(:name, :description, :hours, :course_id)
+  end
 end

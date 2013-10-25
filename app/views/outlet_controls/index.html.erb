@@ -1,24 +1,24 @@
 <h1>Список видов выпусконого контроля</h1>
 
-<table class="table table-bordered">
+<table class="table table-bordered table-hover">
   <thead>
-    <tr>
-      <th>Название</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
+  <tr>
+    <th>Название</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
   </thead>
 
   <tbody>
-    <% @outlet_controls.each do |outlet_control| %>
+  <% @outlet_controls.each do |outlet_control| %>
       <tr>
         <td><%= outlet_control.name %></td>
         <td><%= link_to 'Показать', outlet_control %></td>
         <td><%= link_to 'Редактировать', edit_outlet_control_path(outlet_control) %></td>
-        <td><%= link_to 'Удалить', outlet_control, method: :delete, data: { confirm: 'Вы уверены?' } %></td>
+        <td><%= link_to 'Удалить', outlet_control, method: :delete, data: {confirm: 'Вы уверены?'} %></td>
       </tr>
-    <% end %>
+  <% end %>
   </tbody>
 </table>
 

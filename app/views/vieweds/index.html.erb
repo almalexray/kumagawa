@@ -1,24 +1,24 @@
 <h1>Список</h1>
 
-<table class="table table-bordered">
+<table class="table table-bordered table-hover">
   <thead>
-    <tr>
-      <th>Название</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
+  <tr>
+    <th>Название</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
   </thead>
 
   <tbody>
-    <% @vieweds.each do |viewed| %>
+  <% @vieweds.each do |viewed| %>
       <tr>
         <td><%= viewed.name %></td>
         <td><%= link_to 'Показать', viewed %></td>
         <td><%= link_to 'Редактировать', edit_viewed_path(viewed) %></td>
-        <td><%= link_to 'Удалить', viewed, method: :delete, data: { confirm: 'Вы уверены?' } %></td>
+        <td><%= link_to 'Удалить', viewed, method: :delete, data: {confirm: 'Вы уверены?'} %></td>
       </tr>
-    <% end %>
+  <% end %>
   </tbody>
 </table>
 

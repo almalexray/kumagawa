@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <p>
   <strong>Название:</strong>
   <%= @course.name %>
@@ -17,12 +15,12 @@
 
 <p>
   <strong>Дата начала:</strong>
-  <%= @course.start_date %>
+  <%= @course.start_date.strftime("%F") %>
 </p>
 
 <p>
   <strong>Дата окончания:</strong>
-  <%= @course.end_date %>
+  <%= @course.end_date.strftime("%F") %>
 </p>
 
 <p>
@@ -39,7 +37,12 @@
   <strong>На базе:</strong>
   <%= @course.based %>
 </p>
-
+<p>
+  <strong>Темы:</strong>
+  <% for topic in @course.topics %>
+      <%= topic.name %>,
+  <% end %>
+</p>
 <p>
   <strong>Вид выпускного экзамена:</strong>
   <%= @course.outlet_control %>
@@ -54,15 +57,23 @@
   <strong>Цена:</strong>
   <%= @course.cost %>
 </p>
-<%= form_for(@course) do |f| %>
-<div class="field">
-<%= check_box_tag "user[course_ids][]", @course.id %>
-<br>
-<div class="actions">
-  <%= f.submit 'Подтвердить', class: "btn btn-large btn-primary" %>
-</div>
-<% end %>
 
 </div>
 <%= link_to 'Редактировать', edit_course_path(@course) %> |
 <%= link_to 'Назад', courses_path %>
+<table class="table">
+  <thead>
+  <tr>
+    <th>№</th>
+    <th>ФИО</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @course.users.each do |user| %>
+      <tr>
+        <td><%= user.id %></td>
+        <td><%= user.fio %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>

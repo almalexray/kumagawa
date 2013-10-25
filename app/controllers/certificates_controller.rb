@@ -1,4 +1,6 @@
 class CertificatesController < ApplicationController
+  before_filter :login_required
+  before_filter :role_required
   before_action :set_certificate, only: [:show, :edit, :update, :destroy]
 
   def index
@@ -51,11 +53,11 @@ class CertificatesController < ApplicationController
 
   private
 
-    def set_certificate
-      @certificate = Certificate.find(params[:id])
-    end
+  def set_certificate
+    @certificate = Certificate.find(params[:id])
+  end
 
-    def certificate_params
-      params.require(:certificate).permit(:name)
-    end
+  def certificate_params
+    params.require(:certificate).permit(:name)
+  end
 end

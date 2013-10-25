@@ -2,25 +2,31 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap";
-.header{
+
+body {
+  background-color: #e4f5fc;
+}
+
+.header {
   margin: 10px 0;
   background-color: #DCEAF4;
   padding: 5px 10px 10px 10px;
   border-radius: 5px;
 }
 
-.manage_panel, .main_content{
+.manage_panel, .main_content {
   background-color: #DCEAF4;
   padding: 5px 10px 10px 10px;
   border-radius: 5px;
 }
 
 .main_content {
-  h1{
+  h1 {
     padding-bottom: 10px;
     border-bottom: 1px solid gray;
   }
 }
+
 .main-container {
   margin: 10px 0;
   background-color: #DCEAF4;

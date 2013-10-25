@@ -1,0 +1,39 @@
+<h1>Список ваших курсов</h1>
+
+<table class="table table-bordered">
+  <thead>
+  <tr>
+    <th>Название</th>
+    <th>Тип проведения</th>
+    <th>Вид проведения</th>
+    <th>Дата начала</th>
+    <th>Дата окончания</th>
+    <th>Срок обучения</th>
+    <th>Количество часов</th>
+    <th>На базе</th>
+    <th>Вид выпускного контроля</th>
+    <th>Вид выдаваемого документа</th>
+    <th>Цена</th>
+    <th></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @courses.each do |course| %>
+      <tr>
+        <td><%= course.name %></td>
+        <td><%= course.typed %></td>
+        <td><%= course.view %></td>
+        <td><%= course.start_date.strftime("%F") %></td>
+        <td><%= course.end_date.strftime("%F") %></td>
+        <td><%= course.period %></td>
+        <td><%= course.hours %></td>
+        <td><%= course.based %></td>
+        <td><%= course.outlet_control %></td>
+        <td><%= course.certificate %></td>
+        <td><%= course.cost %></td>
+        <td><%= link_to 'Показать', course %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>

@@ -2,91 +2,113 @@
 <html>
 <head>
   <title>Kumagawa</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class="well">
 <div class="container-fluid">
   <div class="row-fluid">
     <div class="span12">
       <div class="header">
-        <h2>Автоматизированная информационная система «Платные образовательные услуги населению»</h2>
-        <h3> Данитов Дамнин, гр. Б661. Вариант 2-13.</h3>
+        <h3>Автоматизированная информационная система «Платные образовательные услуги населению»</h3>
+        <h4> Выполнил Данитов Д, гр. Б661. Вариант 2-13.</h4>
       </div>
     </div>
   </div>
 </div>
-<% if user_signed_in? && current_user.has_role?(:courses, :new)   %>
+<% if user_signed_in? && current_user.has_role?(:courses, :new) %>
     <div class="container-fluid">
-<div class="navbar navbar-inverse navbar-fixed-bot">
-  <div class="navbar-inner">
-    <div class="container">
-      <a class="brand" href="/admin/roles" align="right">Администраторская панель</a>
-      <div class="nav-collapse collapse">
-        <ul class="nav">
-          <li><%= link_to 'Темы', topics_path %></li>
-          <li><%= link_to 'Вид проведения', vieweds_path %></li>
-          <li><%= link_to 'Вид выпускного контроля', outlet_controls_path %></li>
-          <li><%= link_to 'Организация', organizations_path %></li>
-          <li><%= link_to 'Образования', educations_path %></li>
-          <li><%= link_to 'Вид выдаваемого документа', certificates_path %></li>
-          <li><%= link_to 'Курсы', courses_path %></li>
-          <li><%= link_to 'Выйти', destroy_user_session_path , method: :delete %></li>
-        </ul>
+      <div class="navbar navbar-inverse navbar-fixed-bot">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="brand" href="/admin/roles" align="right">Администраторская панель</a>
+
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li id="fat-menu" class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    Настройки<b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><%= link_to 'Вид проведения', vieweds_path %></li>
+                    <li><%= link_to 'Вид выпускного контроля', outlet_controls_path %></li>
+                    <li><%= link_to 'Образования', educations_path %></li>
+                    <li><%= link_to 'Вид выдаваемого документа', certificates_path %></li>
+                    <li><%= link_to 'Задание', task_path %></li>
+                  </ul>
+                </li>
+                <li><%= link_to 'Курсы', courses_path %></li>
+                <li><%= link_to 'Темы', topics_path %></li>
+                <li><%= link_to 'Пользователи', users_path %></li>
+                <li><%= link_to 'Статистика', stats_courses_path %></li>
+                <li>
+                  <%= link_to 'Выйти', destroy_user_session_path, method: :delete %>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-</div>
-<% elsif user_signed_in?%>
+<% elsif user_signed_in? %>
     <div class="container-fluid">
       <div class="span4">
-        <%= link_to 'Выйти', destroy_user_session_path , method: :delete %>
+        <%= render 'courses/search_form' %>
+      </div>
+      <div class="span2">
+        <%= button_to 'Выйти', destroy_user_session_path, method: :delete, class: "btn" %>
       </div>
     </div>
 <% else %>
     <div class="container-fluid">
-      <div class="span4">
-        <%= link_to 'Войти', new_user_session_path  %>
-      </div>
-     </div>
-<% end %>
-  <div class="container-fluid">
-    <div id="row-fluid">
-      <div class="main-container">
-      <%= yield %>
+      <div class="row">
+        <div class="span4">
+          <%= render 'courses/search_form' %>
+        </div>
+        <div class="span2">
+          <div class="btn-group pull-right" data-toggle="buttons-radio">
+            <%= link_to 'Войти', new_user_session_path, class: "btn" %>
+            <%= link_to 'Регистрация', new_user_registration_path, class: "btn" %>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="row-fluid">
-      <%= yield :role_sidebar %>
-      <%= yield :role_main %>
+<% end %>
+<div class="container-fluid">
+  <div id="row-fluid">
+    <%= yield :role_sidebar %>
+    <%= yield :role_main %>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="main-container span2">
+
+      <div class="manage_panel">
+        <h4>Меню</h4>
+
+        <ul class="nav nav-pills nav-stacked">
+          <li><%= link_to 'Главная', root_path %></li>
+          <li><%= link_to 'Курсы', courses_path %></li>
+          <li><%= link_to 'Темы', topics_path %></li>
+          <li><%= link_to 'Мои курсы', my_courses_path %></li>
+          <li><%= link_to 'Мой аккаунт', current_user %></li>
+        </ul>
+        <%= render 'layouts/current_user_info' %>
+      </div>
+    </div>
+
+    <div class="main-container span10">
+
+      <div class="manage_panel">
+        <% flash.each do |key, value| %>
+            <div class="alert alert-<%= key %>"><%= value %></div>
+        <% end %>
+        <%= yield %>
+      </div>
     </div>
   </div>
-<div class="container-fluid">
- <div class="row-fluid">
-   <div class="main-container span3">
-
-     <div class="manage_panel">
-       <h4>Навигация</h4>
-
-       <ul>
-       <li><%= link_to 'Главная', root_path %></li>
-       <li><%= link_to 'Курсы', courses_path  %></li>
-       <li><%= link_to 'Темы', topics_path %></li>
-       <li><%= link_to 'Мои курсы' %></li>
-       <li><%= link_to 'Мой аккаунт' %></li>
-       </ul>
-       <%= render 'layouts/current_user_info' %>
-     </div>
-   </div>
-
-   </div>
-</div>
-<div class="hero-unit">
-
-</div>
-</div>
 </div>
 </body>
 </html>

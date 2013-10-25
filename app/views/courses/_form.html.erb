@@ -1,62 +1,73 @@
 <%= form_for(@course) do |f| %>
-  <% if @course.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@course.errors.count, "error") %> prohibited this course from being saved:</h2>
+    <% if @course.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@course.errors.count, "error") %> prohibited this course from being saved:</h2>
 
-      <ul>
-      <% @course.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+          <ul>
+            <% @course.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :name, 'Название' %>
+      <br>
+      <%= f.text_field :name %>
     </div>
-  <% end %>
 
-  <div class="field">
-    <%= f.label :name, 'Название' %><br>
-    <%= f.text_field :name %>
-  </div>
-
-  <div class="field">
-    <%= f.label :typed, 'Тип проведения' %><br>
-    <%= f.text_field :typed %>
-  </div>
-  <div class="field">
-    <%= f.label :view, 'Вид проведение' %><br>
-    <%= f.select(:view, Viewed.all.collect {|model| [model.name, model.id]}) %>
-  </div>
-  <div class="field">
-    <%= f.label :start_date, 'Дата начала' %><br>
-    <%= f.datetime_select :start_date %>
-  </div>
-  <div class="field">
-    <%= f.label :end_date, 'Дата окончания' %><br>
-    <%= f.datetime_select :end_date %>
-  </div>
-  <div class="field">
-    <%= f.label :period, 'Срок обучения' %><br>
-    <%= f.text_field :period %>
-  </div>
-  <div class="field">
-    <%= f.label :hours, 'Количество часов' %><br>
-    <%= f.number_field :hours %>
-  </div>
-  <div class="field">
-    <%= f.label :based, 'На базе какого образования' %><br>
-    <%= f.text_field :based %>
-  </div>
-  <div class="field">
-    <%= f.label :outlet_control, 'Вид выпускного контроля' %><br>
-    <%= f.select(:outlet_control, OutletControl.all.collect {|model| [model.name, model.id]}) %>
-  </div>
-  <div class="field">
-    <%= f.label :certificate, 'Вид выдаваемого документа' %><br>
-    <%= f.select(:certificate, Certificate.all.collect {|model| [model.name, model.id]}) %>
-  </div>
-  <div class="field">
-    <%= f.label :cost, 'Стоимость обучения' %><br>
-    <%= f.number_field :cost %>
-  </div>
-  <div class="actions">
-    <%= f.submit 'Подтвердить' %>
-  </div>
+    <div class="field">
+      <%= f.label :typed, 'Тип проведения' %>
+      <br>
+      <%= f.text_field :typed %>
+    </div>
+    <div class="field">
+      <%= f.label :view, 'Вид проведение' %>
+      <br>
+      <%= f.collection_select :view, Viewed.all, :id, :name %>
+    </div>
+    <div class="field">
+      <%= f.label :start_date, 'Дата начала' %>
+      <br>
+      <%= f.datetime_select :start_date %>
+    </div>
+    <div class="field">
+      <%= f.label :end_date, 'Дата окончания' %>
+      <br>
+      <%= f.datetime_select :end_date %>
+    </div>
+    <div class="field">
+      <%= f.label :period, 'Срок обучения' %>
+      <br>
+      <%= f.text_field :period %>
+    </div>
+    <div class="field">
+      <%= f.label :hours, 'Количество часов' %>
+      <br>
+      <%= f.number_field :hours %>
+    </div>
+    <div class="field">
+      <%= f.label :based, 'На базе какого образования' %>
+      <br>
+      <%= f.collection_select :based, Education.all, :id, :name %>
+    </div>
+    <div class="field">
+      <%= f.label :outlet_control, 'Вид выпускного контроля' %>
+      <br>
+      <%= f.collection_select :outlet_control, OutletControl.all, :id, :name %>
+    </div>
+    <div class="field">
+      <%= f.label :certificate, 'Вид выдаваемого документа' %>
+      <br>
+      <%= f.collection_select :certificate, Certificate.all, :id, :name %>
+    </div>
+    <div class="field">
+      <%= f.label :cost, 'Стоимость обучения' %>
+      <br>
+      <%= f.number_field :cost %>
+    </div>
+    <div class="actions">
+      <%= f.submit 'Подтвердить' %>
+    </div>
 <% end %>

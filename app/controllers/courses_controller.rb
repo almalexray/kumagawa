@@ -1,8 +1,9 @@
 class CoursesController < ApplicationController
-  before_filter :login_required, :except => [:index, :show]
-  before_filter :role_required,  :except => [:index, :show]
+  before_filter :login_required, except: [:search, :index, :show]
+  before_filter :role_required, except: [:search, :index, :show, :my]
   before_action :set_course, only: [:edit, :update, :destroy]
-  before_filter :owner_required, :only   => [:edit, :update, :destroy]
+  before_filter :owner_required, only: [:edit, :update, :destroy]
+
   def index
     @courses = Course.all
   end
@@ -13,6 +14,14 @@ class CoursesController < ApplicationController
 
   def new
     @course = Course.new
+  end
+
+  def my
+    @courses = current_user.courses
+  end
+
+  def stats
+    @courses = Course.order("hours DESC")
   end
 
   def edit
@@ -31,6 +40,7 @@ class CoursesController < ApplicationController
       end
     end
   end
+
   def update
     respond_to do |format|
       if @course.update(course_params)
@@ -51,13 +61,17 @@ class CoursesController < ApplicationController
     end
   end
 
-  private
-    def set_course
-      @course = Course.find(params[:id])
-      @ownership_checking_object = @course
-    end
+  def search
+    @courses = Course.search(params)
+  end
 
-    def course_params
-      params.require(:course).permit(:name, :typed, :view, :start_date, :end_date, :period, :hours, :based, :subjects, :outlet_control, :certificate, :cost)
-    end
+  private
+  def set_course
+    @course = Course.find(params[:id])
+    @owner_check_object = @course
+  end
+
+  def course_params
+    params.require(:course).permit(:name, :typed, :view, :start_date, :end_date, :period, :hours, :based, :subjects, :outlet_control, :certificate, :cost, user_ids: [])
+  end
 end

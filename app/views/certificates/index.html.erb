@@ -1,24 +1,24 @@
-<h1>Listing certificates</h1>
+<h1>Список сертификатов(вид выдаваемого документа)</h1>
 
-<table class="table table-bordered">
+<table class="table table-bordered table-hover">
   <thead>
-    <tr>
-      <th>Name</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
+  <tr>
+    <th>Название</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
   </thead>
 
   <tbody>
-    <% @certificates.each do |certificate| %>
+  <% @certificates.each do |certificate| %>
       <tr>
         <td><%= certificate.name %></td>
         <td><%= link_to 'Показать', certificate %></td>
         <td><%= link_to 'Редактировать', edit_certificate_path(certificate) %></td>
-        <td><%= link_to 'Удалить', certificate, method: :delete, data: { confirm: 'Вы уверены?' } %></td>
+        <td><%= link_to 'Удалить', certificate, method: :delete, data: {confirm: 'Вы уверены?'} %></td>
       </tr>
-    <% end %>
+  <% end %>
   </tbody>
 </table>
 

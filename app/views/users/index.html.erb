@@ -1,0 +1,43 @@
+<h1>Список пользователей</h1>
+<div class="nav pull-right">
+  <b>Сортировать:</b>
+  <%= link_to "по образованию ", users_path(sort: "education") %>|
+  <%= link_to "по возрасту", users_path(sort: "birth") %>
+</div>
+<table class="table table-bordered table-hover">
+  <thead>
+  <tr>
+    <th>Номер</th>
+    <th>Фамилия Имя Отчество</th>
+    <th>Email</th>
+    <th>Роль</th>
+    <th>Образование</th>
+    <th>Возраст</th>
+    <th>Курсы</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @users.each do |user| %>
+      <tr>
+        <td><%= user.id %></td>
+        <td><%= user.fio %></td>
+        <td><%= user.email %></td>
+        <td><%= user.role.name %></td>
+        <td><%= user.education %></td>
+        <td><%= Time.now.year - user.birth.year %></td>
+        <td>
+          <% for course in user.courses %>
+              <%= course.name %>
+          <% end %></td>
+        <td><%= link_to 'Показать', user %></td>
+        <td><%= link_to 'Редактировать', edit_user_path(user) %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<br>

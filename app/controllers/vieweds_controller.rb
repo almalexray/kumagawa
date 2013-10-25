@@ -1,4 +1,6 @@
 class ViewedsController < ApplicationController
+  before_filter :login_required
+  before_filter :role_required
   before_action :set_viewed, only: [:show, :edit, :update, :destroy]
 
   def index
@@ -50,11 +52,11 @@ class ViewedsController < ApplicationController
   end
 
   private
-    def set_viewed
-      @viewed = Viewed.find(params[:id])
-    end
+  def set_viewed
+    @viewed = Viewed.find(params[:id])
+  end
 
-    def viewed_params
-      params.require(:viewed).permit(:name)
-    end
+  def viewed_params
+    params.require(:viewed).permit(:name)
+  end
 end

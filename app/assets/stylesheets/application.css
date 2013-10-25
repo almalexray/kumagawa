@@ -13,3 +13,13 @@
 //= require the_role/bootstrap_sass
 //= require the_role
 */
+body {
+    background: #e0f3fa;
+    background: -moz-linear-gradient(top, #e0f3fa 0%, #d8f0fc 36%, #b8e2f6 79%, #b6dffd 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e0f3fa), color-stop(36%, #d8f0fc), color-stop(79%, #b8e2f6), color-stop(100%, #b6dffd));
+    background: -webkit-linear-gradient(top, #e0f3fa 0%, #d8f0fc 36%, #b8e2f6 79%, #b6dffd 100%);
+    background: -o-linear-gradient(top, #e0f3fa 0%, #d8f0fc 36%, #b8e2f6 79%, #b6dffd 100%);
+    background: -ms-linear-gradient(top, #e0f3fa 0%, #d8f0fc 36%, #b8e2f6 79%, #b6dffd 100%);
+    background: linear-gradient(to bottom, #e0f3fa 0%, #d8f0fc 36%, #b8e2f6 79%, #b6dffd 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0f3fa', endColorstr='#b6dffd', GradientType=0);
+}

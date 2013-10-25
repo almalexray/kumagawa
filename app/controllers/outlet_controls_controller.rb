@@ -1,4 +1,6 @@
 class OutletControlsController < ApplicationController
+  before_filter :login_required
+  before_filter :role_required
   before_action :set_outlet_control, only: [:show, :edit, :update, :destroy]
 
   def index
@@ -50,11 +52,11 @@ class OutletControlsController < ApplicationController
   end
 
   private
-    def set_outlet_control
-      @outlet_control = OutletControl.find(params[:id])
-    end
+  def set_outlet_control
+    @outlet_control = OutletControl.find(params[:id])
+  end
 
-    def outlet_control_params
-      params.require(:outlet_control).permit(:name)
-    end
+  def outlet_control_params
+    params.require(:outlet_control).permit(:name)
+  end
 end
