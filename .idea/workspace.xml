@@ -2,19 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80dd701b-2fe0-4470-91e5-08d0fef828a2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_current_user_info.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_current_user_info.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/certificates/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/certificates/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/courses/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/courses/_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/kumagawa.iml" afterPath="$PROJECT_DIR$/.idea/kumagawa.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="kumagawa.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Gemfile" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1386629445408" ignored="false" />
+    <file path="/Gemfile" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1386630791402" ignored="false" />
     <file path="/20130919135337_devise_create_users.rb" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1379599170877" ignored="false" />
-    <file path="/Dummy.txt" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1386629546433" ignored="false" />
+    <file path="/Dummy.txt" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1386630529866" ignored="false" />
     <file path="/user.rb" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1379760483453" ignored="false" />
     <file path="/course.rb" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1382687855519" ignored="false" />
     <file path="/courses.css.scss" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1381266140102" ignored="false" />
@@ -56,7 +56,7 @@
     <file path="/certificate.rb" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1385688741245" ignored="false" />
     <file path="/outlet_control.rb" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1385688773288" ignored="false" />
     <file path="/a.sql" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1385689158704" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/.generators" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1386630511284" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/.generators" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1386630761406" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +161,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="10" selection-start="195" selection-end="195" vertical-scroll-proportion="0.2284069">
+            <state line="8" column="8" selection-start="187" selection-end="187" vertical-scroll-proportion="0.26103646">
               <folding />
             </state>
           </provider>
@@ -803,7 +803,11 @@
       <created>1382697270824</created>
       <updated>1382697270824</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="heroku">
+      <created>1386630531771</created>
+      <updated>1386630531771</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -839,7 +843,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25225225" sideWeight="0.4272237" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21698113" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21698113" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21698113" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884097" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -893,7 +897,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="all work" />
+    <option name="LAST_COMMIT_MESSAGE" value="heroku" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -912,6 +916,7 @@
     <MESSAGE value="preparing to habtm" />
     <MESSAGE value="all wark" />
     <MESSAGE value="all work" />
+    <MESSAGE value="heroku" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1076,7 +1081,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="10" selection-start="195" selection-end="195" vertical-scroll-proportion="0.2284069">
+        <state line="8" column="8" selection-start="187" selection-end="187" vertical-scroll-proportion="0.26103646">
           <folding />
         </state>
       </provider>
