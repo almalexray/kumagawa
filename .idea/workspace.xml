@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80dd701b-2fe0-4470-91e5-08d0fef828a2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_current_user_info.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_current_user_info.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/certificates/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/certificates/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/courses/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/courses/_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/kumagawa.iml" afterPath="$PROJECT_DIR$/.idea/kumagawa.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -14,7 +12,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Gemfile" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1386630791402" ignored="false" />
     <file path="/20130919135337_devise_create_users.rb" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1379599170877" ignored="false" />
-    <file path="/Dummy.txt" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1386630529866" ignored="false" />
+    <file path="/Dummy.txt" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1386630820685" ignored="false" />
     <file path="/user.rb" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1379760483453" ignored="false" />
     <file path="/course.rb" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1382687855519" ignored="false" />
     <file path="/courses.css.scss" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1381266140102" ignored="false" />
@@ -56,7 +54,7 @@
     <file path="/certificate.rb" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1385688741245" ignored="false" />
     <file path="/outlet_control.rb" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1385688773288" ignored="false" />
     <file path="/a.sql" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1385689158704" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/.generators" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1386630761406" ignored="false" />
+    <file path="$PROJECT_DIR$/app/views/certificates/_form.html.erb" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1386630821593" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +159,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="8" selection-start="187" selection-end="187" vertical-scroll-proportion="0.26103646">
+            <state line="17" column="60" selection-start="429" selection-end="429" vertical-scroll-proportion="0.5547025">
               <folding />
             </state>
           </provider>
@@ -337,6 +335,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kumagawa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kumagawa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kumagawa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kumagawa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -743,15 +781,15 @@
       <method />
     </configuration>
     <list size="9">
-      <item index="0" class="java.lang.String" itemvalue="Rake.db:migrate" />
-      <item index="1" class="java.lang.String" itemvalue="Rake.db:migrate:status" />
-      <item index="2" class="java.lang.String" itemvalue="Rake.db:roles:admin" />
-      <item index="3" class="java.lang.String" itemvalue="Rake.db:rollback" />
-      <item index="4" class="java.lang.String" itemvalue="Rake.db:roles:test" />
-      <item index="5" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="6" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="7" class="java.lang.String" itemvalue="Rails.Production: kumagawa" />
-      <item index="8" class="java.lang.String" itemvalue="Rails.Development: kumagawa" />
+      <item index="0" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="1" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="2" class="java.lang.String" itemvalue="Rails.Production: kumagawa" />
+      <item index="3" class="java.lang.String" itemvalue="Rails.Development: kumagawa" />
+      <item index="4" class="java.lang.String" itemvalue="Rake.db:migrate" />
+      <item index="5" class="java.lang.String" itemvalue="Rake.db:migrate:status" />
+      <item index="6" class="java.lang.String" itemvalue="Rake.db:roles:admin" />
+      <item index="7" class="java.lang.String" itemvalue="Rake.db:rollback" />
+      <item index="8" class="java.lang.String" itemvalue="Rake.db:roles:test" />
     </list>
     <recent_temporary>
       <list size="5">
@@ -807,7 +845,11 @@
       <created>1386630531771</created>
       <updated>1386630531771</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="heroku1">
+      <created>1386630822421</created>
+      <updated>1386630822421</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -897,7 +939,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="heroku" />
+    <option name="LAST_COMMIT_MESSAGE" value="heroku1" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -917,16 +959,12 @@
     <MESSAGE value="all wark" />
     <MESSAGE value="all work" />
     <MESSAGE value="heroku" />
+    <MESSAGE value="heroku1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/viewed.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="35" selection-start="72" selection-end="72" vertical-scroll-proportion="0.09189189" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/outlet_control.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="33" selection-start="74" selection-end="74" vertical-scroll-proportion="0.030630631" />
@@ -1079,9 +1117,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Rakefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="8" selection-start="187" selection-end="187" vertical-scroll-proportion="0.26103646">
+        <state line="17" column="60" selection-start="429" selection-end="429" vertical-scroll-proportion="0.5547025">
           <folding />
         </state>
       </provider>
