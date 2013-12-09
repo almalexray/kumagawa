@@ -1,8 +1,6 @@
 <%= form_for(@course) do |f| %>
     <% if @course.errors.any? %>
         <div id="error_explanation">
-          <h2><%= pluralize(@course.errors.count, "error") %> prohibited this course from being saved:</h2>
-
           <ul>
             <% @course.errors.full_messages.each do |msg| %>
                 <li><%= msg %></li>
@@ -25,7 +23,7 @@
     <div class="field">
       <%= f.label :view, 'Вид проведение' %>
       <br>
-      <%= f.collection_select :view, Viewed.all, :id, :name %>
+      <%= f.collection_select :view, Viewed.all, :name, :name %>
     </div>
     <div class="field">
       <%= f.label :start_date, 'Дата начала' %>
@@ -50,17 +48,17 @@
     <div class="field">
       <%= f.label :based, 'На базе какого образования' %>
       <br>
-      <%= f.collection_select :based, Education.all, :id, :name %>
+      <%= f.collection_select :based, Education.all, :name, :name %>
     </div>
     <div class="field">
       <%= f.label :outlet_control, 'Вид выпускного контроля' %>
       <br>
-      <%= f.collection_select :outlet_control, OutletControl.all, :id, :name %>
+      <%= f.collection_select :outlet_control, OutletControl.all, :name, :name %>
     </div>
     <div class="field">
       <%= f.label :certificate, 'Вид выдаваемого документа' %>
       <br>
-      <%= f.collection_select :certificate, Certificate.all, :id, :name %>
+      <%= f.collection_select :certificate, Certificate.all, :name, :name %>
     </div>
     <div class="field">
       <%= f.label :cost, 'Стоимость обучения' %>

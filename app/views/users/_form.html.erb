@@ -1,0 +1,9 @@
+<%= form_for(@user) do |f| %>
+    <% Course.all.each do |course| %>
+        <%= check_box_tag "user[course_ids][]", course.id, @user.courses.include?(course), id: dom_id(course)  %>
+        <%= label_tag dom_id(course), course.name %><br>
+    <%end%>
+  <div class="actions">
+  <%= f.submit "Сохранить", class: "btn" %>
+    </div>
+<% end %>

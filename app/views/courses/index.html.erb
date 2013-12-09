@@ -8,7 +8,6 @@
     <th>Вид проведения</th>
     <th>Срок обучения</th>
     <th>Количество часов</th>
-    <th>На базе</th>
     <th></th>
     <th></th>
     <th></th>
@@ -23,7 +22,6 @@
         <td><%= course.view %></td>
         <td><%= course.period %></td>
         <td><%= course.hours %></td>
-        <td><%= course.based %></td>
         <td><%= link_to '', course, class: "icon-search" %></td>
         <td><%= link_to '', edit_course_path(course), class: "icon-pencil" %></td>
         <td><%= link_to '', course, method: :delete, data: {confirm: 'Вы действительно хотите удалить?'}, class: "icon-remove" %></td>

@@ -6,5 +6,5 @@ class Course < ActiveRecord::Base
     where('name LIKE ?', "%#{params[:name]}%")
   end
 
-  validates :name, presence: true
+  validates :name, :typed, :view, :start_date, :end_date, :period, :hours, :based, :subjects, :outlet_control, :certificate, :cost, presence: true
 end

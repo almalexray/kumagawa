@@ -1,0 +1,17 @@
+<% if current_user.owner?(@user)  %>
+<h4>Профиль</h4>
+<p>
+  <strong>Ваш фамилия:</strong>
+  <%= @user.fio %>
+</p>
+<p>
+  <strong>Курсы:</strong>
+  <% for course in @user.courses %>
+  <%= course.name %>,
+  <% end %>
+  <%= link_to ' Редактировать', edit_user_path(current_user) %>
+</p>
+<% else %>
+    Профиль скрыт.
+<% end %>
+

@@ -4,7 +4,6 @@
     <p>
     <p><b>Ваш email: </b><%= current_user.email %></p>
     <p><b>Вы: </b><%= current_user.role.title %></p>
-    <p></p>
     </p>
 
     </p>
@@ -13,9 +12,12 @@
       <% for courses in current_user.courses %>
           <% for user in courses.users %>
             <ul>
-              <li><%= link_to "#{user.fio}", user %></li>
+              <% unless user==current_user %>
+                  <li><%= link_to "#{user.fio}", user %></li>
+              <% end %>
             </ul>
         <% end %>
     <% end %>
+    </p>
 <% end %>
 </p>
