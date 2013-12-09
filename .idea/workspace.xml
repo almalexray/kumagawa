@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80dd701b-2fe0-4470-91e5-08d0fef828a2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/kumagawa.iml" afterPath="$PROJECT_DIR$/.idea/kumagawa.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -12,7 +15,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Gemfile" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1386630791402" ignored="false" />
     <file path="/20130919135337_devise_create_users.rb" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1379599170877" ignored="false" />
-    <file path="/Dummy.txt" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1386630820685" ignored="false" />
+    <file path="/Dummy.txt" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1386631044593" ignored="false" />
     <file path="/user.rb" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1379760483453" ignored="false" />
     <file path="/course.rb" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1382687855519" ignored="false" />
     <file path="/courses.css.scss" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1381266140102" ignored="false" />
@@ -156,10 +159,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="60" selection-start="429" selection-end="429" vertical-scroll-proportion="0.5547025">
+            <state line="12" column="3" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -192,10 +195,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.yml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="database.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="120" selection-end="120" vertical-scroll-proportion="0.0">
+            <state line="25" column="38" selection-start="614" selection-end="614" vertical-scroll-proportion="0.79588014">
               <folding />
             </state>
           </provider>
@@ -849,7 +852,11 @@
       <created>1386630822421</created>
       <updated>1386630822421</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="2">
+      <created>1386631046952</created>
+      <updated>1386631046952</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -939,7 +946,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="heroku1" />
+    <option name="LAST_COMMIT_MESSAGE" value="2" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -960,6 +967,7 @@
     <MESSAGE value="all work" />
     <MESSAGE value="heroku" />
     <MESSAGE value="heroku1" />
+    <MESSAGE value="2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1089,13 +1097,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/rails">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1110,14 +1111,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
+    <entry file="file://$PROJECT_DIR$/Rakefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="120" selection-end="120" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Rakefile">
+    <entry file="file://$PROJECT_DIR$/bin/rails">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
@@ -1126,7 +1127,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="60" selection-start="429" selection-end="429" vertical-scroll-proportion="0.5547025">
+        <state line="12" column="3" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="38" selection-start="614" selection-end="614" vertical-scroll-proportion="0.79588014">
           <folding />
         </state>
       </provider>
