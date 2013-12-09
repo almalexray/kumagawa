@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80dd701b-2fe0-4470-91e5-08d0fef828a2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_current_user_info.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_current_user_info.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/certificates/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/certificates/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/courses/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/courses/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/certificate.rb" afterPath="$PROJECT_DIR$/app/models/certificate.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/course.rb" afterPath="$PROJECT_DIR$/app/models/course.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/courses/index.html.erb" afterPath="$PROJECT_DIR$/app/views/courses/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/kumagawa.iml" afterPath="$PROJECT_DIR$/.idea/kumagawa.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/outlet_control.rb" afterPath="$PROJECT_DIR$/app/models/outlet_control.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/topic.rb" afterPath="$PROJECT_DIR$/app/models/topic.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/viewed.rb" afterPath="$PROJECT_DIR$/app/models/viewed.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="kumagawa.iws" />
@@ -63,6 +56,7 @@
     <file path="/certificate.rb" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1385688741245" ignored="false" />
     <file path="/outlet_control.rb" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1385688773288" ignored="false" />
     <file path="/a.sql" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1385689158704" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/.generators" changelist="80dd701b-2fe0-4470-91e5-08d0fef828a2" time="1386630511284" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +161,43 @@
       <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="3" selection-start="199" selection-end="199" vertical-scroll-proportion="0.2962963">
+            <state line="7" column="10" selection-start="195" selection-end="195" vertical-scroll-proportion="0.2284069">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rails" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bin/rails">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="boot.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/boot.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/database.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="120" selection-end="120" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -204,7 +234,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/views/topics/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/courses/index.html.erb" />
@@ -219,6 +248,7 @@
         <option value="$PROJECT_DIR$/app/models/outlet_control.rb" />
         <option value="dbtable:/f0f49487/a37df426-0f27-4c46-bf1e-da61ee5e390f/..users" />
         <option value="dbtable:/f0f49487/a37df426-0f27-4c46-bf1e-da61ee5e390f/..certificates" />
+        <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
@@ -306,33 +336,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kumagawa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kumagawa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="courses" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -824,17 +828,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32884097" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884097" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884097" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3101673" sideWeight="0.671159" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3101673" sideWeight="0.7830189" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967825" sideWeight="0.7830189" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21750322" sideWeight="0.671159" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21750322" sideWeight="0.7830189" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25225225" sideWeight="0.4272237" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32884097" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21698113" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21698113" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884097" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -913,26 +917,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/outlet_controls_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.164794" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/courses/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="102" selection-end="102" vertical-scroll-proportion="0.1003937" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/topics_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="62" selection-start="1434" selection-end="1456" vertical-scroll-proportion="0.752809" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/certificates_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.1861805" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/viewed.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="35" selection-start="72" selection-end="72" vertical-scroll-proportion="0.09189189" />
@@ -1062,9 +1046,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bin/rails">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/boot.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="120" selection-end="120" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="3" selection-start="199" selection-end="199" vertical-scroll-proportion="0.2962963">
+        <state line="7" column="10" selection-start="195" selection-end="195" vertical-scroll-proportion="0.2284069">
           <folding />
         </state>
       </provider>
