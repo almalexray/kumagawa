@@ -4,13 +4,6 @@ source 'http://rubygems.org'
 gem 'rails', '4.0.0'
 
 # Use sqlite3 as the database for Active Record
-group :production do
-  gem 'pg', '0.15.1'
-  gem 'rails_12factor', '0.0.2'
-end
-group :test do
-  gem 'sqlite3', '1.3.6'
-end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -24,7 +17,7 @@ gem 'devise'
 gem 'bootstrap-sass'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-
+gem 'sqlite3', '1.3.9'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 

@@ -17,7 +17,7 @@
 
     <div><%= f.label :birth, 'Дата рождения' %>
       <br/>
-      <%= f.date_select :birth %></div>
+      <%= f.date_select :birth , :start_year => Date.current.year, :end_year => 1940 %></div>
 
     <div><%= f.label :password, 'Пароль' %>
       <br/>

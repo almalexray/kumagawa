@@ -18,9 +18,3 @@ test:
   pool: 5
   timeout: 5000
 
-production:
-  adapter: postgresql
-  encoding: unicode
-  database: dfvb505k3rm7us
-  pool: 5
-  password: PPfvsEym1eSk8znoCUg03wrYqW

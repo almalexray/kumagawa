@@ -28,12 +28,12 @@
     <div class="field">
       <%= f.label :start_date, 'Дата начала' %>
       <br>
-      <%= f.datetime_select :start_date %>
+      <%= f.datetime_select :start_date , :start_year => Date.current.year, :end_year => 2020  %>
     </div>
     <div class="field">
       <%= f.label :end_date, 'Дата окончания' %>
       <br>
-      <%= f.datetime_select :end_date %>
+      <%= f.datetime_select :end_date , :start_year => Date.current.year, :end_year => 2020%>
     </div>
     <div class="field">
       <%= f.label :period, 'Срок обучения' %>
